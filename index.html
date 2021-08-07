@@ -16,93 +16,287 @@
 
 </head>
 <body>  
-    <!--Menú-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-image: url(images/blog-header-background.jpg);">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand" href="#"><img src="images/LOGO.png" height="85px"></a>
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#nosotros">Nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#servicios">Servicios</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="login.html" tabindex="-1" aria-disabled="true">Gestion Clientes</a>
-              </li>
-            </ul>
-            
-            <form class="d-flex" action="javascript:popUp('login.html')">
-              <button class="m-3 btn btn-outline-success" type="submit">Ingresar</button>
-            </form>
-            
+  <nav class="navbar navbar-expand-lg fixed-top py-3">
+      <div class="container"><a href="#" class="navbar-brand text-uppercase font-weight-bold"><img src="images/LOGO.png" height="85px"></a>
+          <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+          
+          <div id="navbarSupportedContent" class="collapse navbar-collapse">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active"><a href="#" class="nav-link text-uppercase font-weight-bold">Inicio</a></li>
+                  <li class="nav-item"><a href="#nosotros" class="nav-link text-uppercase font-weight-bold">Nosotros</a></li>
+                  <li class="nav-item"><a href="#servicios" class="nav-link text-uppercase font-weight-bold">Servicios</a></li>
+                  <li class="nav-item"><a href="#contacto" class="nav-link text-uppercase font-weight-bold">Contacto</a></li>
+                  <li class="nav-item"><a href="login.html" class="nav-link text-uppercase font-weight-bold">Gestión Clientes</a></li>
+              </ul>
           </div>
-        </div>
-    </nav>
-  
-    <!--Imagen-->
-    <div class="imagen">    
-            <img src="images/blog-header-background.jpg"> 
-        <hr>
+      </div>
+  </nav>
+
+<div id="nosotros" class="container">
+  <div class="pt-5 text-white">
+      <header class="py-5 mt-5">
+          <h3 class="display-4">Sobre nosotros</h3>
+          <hr>
+          <p class="lead mb-0">Somos una empresa Rosarina con mas de 50 años en el rubro, dedicada al tratamiento y coloración de metales.</p>
+          <p class="lead">Recuperación y restauración de piezas de hierro, 
+            bronce, etc, mediante pulido y posterior acabado a elegir.
+            Consulte presupuesto sin compromiso.</p>
+          <hr>
+          <div class="imgPR text-center"><img src="images/americanmachinist_6660_electroless_plating_promo_0.png" alt=""></div>
+          <hr>
+      </header>   
+  </div>
+</div>
+
+<!--TARJETAS-->
+<section>
+<h2 id="servicios" class="display-4 text-white">NUESTROS SERVICIOS</h2>
+  <div class="multicolumn">    
+    <div class="blog-card">      
+      <div class="meta">
+        <div class="photo" style="background-image: url(images/eyelets-de-níquel-brillante-o-cromado-para-la-fijación-cortinas-en-el-taller-diseño-decoración-final-una-casa-apartamento-199417900.jpg)"></div>
+        <ul class="details">
+          <li class="author"><a href="#">Galvanoplastia Junco</a></li>
+          <li class="date">Ago. 09, 2021</li>
+          <li class="tags">
+            <ul>
+              <li><a href="#">Niquelado</a></li>
+              <li><a href="#">Rosario</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="description">
+        <h1>Niquelado</h1>
+        <h2>Níquel brillante decorativo</h2>
+        <p> Se utiliza en una amplia gama de aplicaciones. 
+            Ofrece un acabado de alto brillo, protección contra la corrosión y resistencia al desgaste.</p>
+        <p class="read-more">
+          <a href="#">Leer Más</a>
+        </p>
+      </div>
+    </div>
+    <div class="blog-card">
+      <div class="meta">
+        <div class="photo" style="background-image: url(images/cromado-de-piezas-metalicas-en-zaragoza.jpg)"></div>
+        <ul class="details">
+          <li class="author"><a href="#">Galvanoplastia Junco</a></li>
+          <li class="date">Ago. 03, 2021</li>
+          <li class="tags">
+            <ul>
+              <li><a href="#">Cromado</a></li>
+              <li><a href="#">Rosario</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="description">
+        <h1>Cromado</h1>
+        <h2>Capa de cromo simplemente decorativa</h2>
+        <p>Proporciona resistencia frente a la corrosión, facilita la limpieza del objeto e incrementa su dureza superficial</p>
+        <p class="read-more">
+          <a href="#">Leer Más</a>
+        </p>
+      </div>
     </div>
 
-    <!--Texto-->
+    <div class="blog-card alt">
+      <div class="meta">
+        <div class="photo" style="background-image: url(images/421.jpg)"></div>
+        <ul class="details">
+          <li class="author"><a href="#">Galvanoplastia Junco</a></li>
+          <li class="date">Ago. 3, 2021</li>
+          <li class="tags">
+            <ul>
+              <li><a href="#">Dorado</a></li>
+              <li><a href="#">Rosario</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="description">
+        <h1>Dorado / Bronceado</h1>
+        <h2>Baño simil oro</h2>
+        <p>Utilizado para acabado decorativo dando color y brillo uniforme en las piezas niqueladas.
+          Por último se realiza una aplicación de laca transparente. </p>
+        <p class="read-more">
+          <a href="#">Leer Más</a>
+        </p>
+      </div>
+    </div>
+    <div class="blog-card alt">
+      <div class="meta">
+        <div class="photo" style="background-image: url(images/344212.jpg)"></div>
+        <ul class="details">
+          <li class="author"><a href="#">Galvanoplastia Junco</a></li>
+          <li class="date">Ago. 5, 2021</li>
+          <li class="tags">
+            <ul>
+              <li><a href="#">Niquel Mate</a></li>
+              <li><a href="#">Platil</a></li>
+              <li><a href="#">Rosario</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="description">
+        <h1>Níquel Mate / Platil</h1>
+        <h2>Base de niquel brillante</h2>
+        <p>Se le realiza un esmerilado para opacar la pieza y de esta manera lograr el acabado mate. Luego se realiza una aplicación de laca transparente.</p>
+        <p class="read-more">
+          <a href="#">Leer Más</a>
+        </p>
+      </div>
+    </div>
+    <div class="blog-card">
+      <div class="meta">
+        <div class="photo" style="background-image: url(images/01.zincado.azul.jpg)"></div>
+        <ul class="details">
+          <li class="author"><a href="#">Galvanoplastia Junco</a></li>
+          <li class="date">Ago. 7, 2021</li>
+          <li class="tags">
+            <ul>
+              <li><a href="#">Zincado</a></li>
+              <li><a href="#">Galvanizado</a></li>
+              <li><a href="#">Rosario</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="description">
+        <h1>Zincado</h1>
+        <h2>Baño en frío de zinc</h2>
+        <p>Su aspecto estético es mucho más agradable que el galvanizado, y su coste más económico, ideal para piezas y aplicaciones vistas. De color azulado.</p>
+        <p class="read-more">
+          <a href="#">Leer Más</a>
+        </p>
+      </div>
+    </div>
+    <div class="blog-card">
+      <div class="meta">
+        <div class="photo" style="background-image: url(images/pulido-de-metales.i211-k28sftw-l5.jpg)"></div>
+        <ul class="details">
+          <li class="author"><a href="#">Galvanoplastia Junco</a></li>
+          <li class="date">Ago. 8, 2021</li>
+          <li class="tags">
+            <ul>
+              <li><a href="#">Pulido</a></li>
+              <li><a href="#">Rosario</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="description">
+        <h1>Pulidos</h1>
+        <h2>Esmerilado de piezas</h2>
+        <p>Proceso mediante el cual se afina la superficie metálica de los objetos, eliminando marcas, roces, rayaduras y soldaduras.</p>
+        <p class="read-more">
+          <a href="#">Leer Más</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
-      <div id="text">
-        <h1 id="nosotros">Nuestra Empresa</h1>
+<!--MAPA-->
 
-        <div class="card mb-3">
-          <img src="images/cromado-elec.jpg" class="card-img-top" height="500px">
-          <div class="card-body">
-            <p class="card-text">Somos una empresa Rosarina con mas de 50 años en el rubro, dedicada al tratamiento de metales el cual es llevado a cabo a través de un proceso electrolítico.</p>
+<section id="contacto" class="contact-us">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-7">
+              <div class="section-title">
+                  <h2>Contáctenos</h2>
+                  <p><b>Haga su consulta</b> y la responderemos a la brevedad.</p>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-lg-7">
+              <form class="mb-4 mb-lg-0">
+                  <div class="form-row">
+                      <div class="col-md-6 form-group">
+                          <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" />
+                      </div>
+                      <div class="col-md-6 form-group">
+                          <input type="email" class="form-control" name="email" id="email" placeholder="Email" />
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" />
+                  </div>
+                  <div class="form-group">
+                      <textarea class="form-control" name="message" placeholder="Escriba su consulta..."></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-dark">Enviar</button>
+              </form>
+          </div>
+
+          <div class="col-lg-5">
+              <div class="map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.206156198019!2d-60.68133238481296!3d-32.971962380913574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2d8db817b669e18f!2sGalvanoplastia%20Junco!5e0!3m2!1ses!2sar!4v1627935714212!5m2!1ses!2sar" width="100%" height="350" frameborder="0" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!--FOOTER-->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>Algunos de nuestros clientes</h6>
+            <img src="images/logo-axel.png" href="https://www.axelsa.com.ar/" height="30px"> <img src="images/Logo_buenayre_-_CDR.png" height="70px"> <img src="images/images.png" height="40px">
+            <img src="images/logo-vignolo.png" height="90px"> <img src="images/logori.png" height="50px"> <img src="images/cropped-Web_Morelli-16.png" height="40px"> <img src="images/liliana.png" height="20px"> 
+            <img src="images/logo-capobianco.png" height="30px"> <img src="images/logo-vangoud.png" height="60px">
+            <hr> 
+            <h6>About</h6>
+            <p class="text-justify">Proyecto Final <i>CODO A CODO 4.0</i> Java FullStack</p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Categorias</h6>
+            <ul class="footer-links">
+              <li><a href="#">HTML</a></li>
+              <li><a href="#">BOOTSTRAP</a></li>
+              <li><a href="#">JavaScript</a></li>
+              <li><a href="#">Java</a></li>
+              <li><a href="#">MySQL</a></li>
+
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Links Rápidos</h6>
+            <ul class="footer-links" id="aaaad">
+              <li><a href="#nosotros">Sobre Nosotros</a></li>
+              <li><a href="#servicios">Servicios</a></li>
+              <li><a href="#">Politica de Privacidad</a></li>
+              <li><a href="#">Mapa del sitio</a></li>
+            </ul>
           </div>
         </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2021 Todos los derechos reservados 
+         <a href="#">Galvanoplastia Junco</a>.
+            </p>
+          </div>
 
-        <h1 id="servicios">Servicios</h1>
-
-        <div class="card-group">
-          <div class="card">
-            <img src="images/81nbAWv0wCL._AC_SX522_.jpg" class="card-img-top" height="350px">
-            <div class="card-body">
-              <h5 class="card-title">Cromado</h5>
-              <p class="card-text">Las piezas son pulidas, lavadas y posteriormente sometidas al proceso de niquelado, luego se les da un 'flash' de cromo y se dejan secar.</p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="images/421.jpg" class="card-img-top" height="350px">
-            <div class="card-body">
-              <h5 class="card-title">Dorado</h5>
-              <p class="card-text">Base de níquel y luego sometida nuevamente a un proceso electrolitico para depositar el color dorado, Posteriormente se le aplica laca transparente y es llevada a un horno a 180º para su finalización.</p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="images/cb302-platil1-242f3861f4a5f0370b15981067396555-640-0.jpg" class="card-img-top" height="350x">
-            <div class="card-body">
-              <h5 class="card-title">Niquel Mate / Platil</h5>
-              <p class="card-text">Lleva una base de niquel y posteriormente es cepillada para lograr la tonalidad mate deseada, por ultimo se le aplica laca transparente y es llevada a un horno a 180º para su finalización.</p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="images/guia-lateral-horno-balay-bosch.jpg" class="card-img-top" height="350x">
-            <div class="card-body">
-              <h5 class="card-title">Zincado</h5>
-              <p class="card-text">Base de zinc con terminacion en pasivado azul.</p>
-            </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+            </ul>
           </div>
         </div>
       </div>
+    </footer>
 
-      
     <!--Scripts JS-->
     <script src="https://kit.fontawesome.com/4e75c3ae45.js" crossorigin="anonymous"></script>
     <script src="js/jquery.js"></script>
